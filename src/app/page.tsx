@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Trafix Inc. | Bienvenue",
+  title: "Trafix | Bienvenue",
   description: "Entreprise de signalisation routière",
 };
 
