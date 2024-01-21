@@ -22,6 +22,14 @@ p {
   line-height: normal;
 }
 
+h1 {
+  font-variation-settings: "wght" 700;
+}
+
 h2 {
   font-variation-settings: "wght" 400;
+}
+
+label {
+  font-variation-settings: "wght" 500;
 }

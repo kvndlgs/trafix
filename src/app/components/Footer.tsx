@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col items-start justify-between bg-gun py-10">
+    <footer className="w-full flex flex-col items-start justify-between bg-gun-600  py-10">
       <div className="px-[24px] md:px-[64px] w-full">
         <div className="flex items-center justify-between w-full">
           <a href="/">
@@ -9,7 +9,7 @@ export default function Footer() {
               xmlns="http://www.w3.org/2000/svg"
               xmlSpace="preserve"
               viewBox="0 0 3000 850"
-              className="w-[130px]"
+              className="w-[130px] md:pb-0 pb-4"
             >
               <g fill="#fff">
                 <path d="M2800 118.3h-262.6l-10.4 12.4c-21.6 27.7-43.4 54.2-65.2 81-13.5-25.4-27.3-50-41.2-75l-11.3-18.4h-764.7l-5 33.3c-12.9 71.1-25.4 141.4-38.7 212.1-21-75.5-40.2-148.4-58.8-217.5l-.1.3c-4.7-17.3-20.4-28.1-38.4-28.1h-178.7c-10.8 0-21.3 3.9-27.4 12.9 0 .1-.1-.9-.1-.9-69 101.6-132.6 196.4-194.1 289.8-1.6-9.4-4.2-19.6-8.5-30.4 30.2-27.1 52.1-62.9 61.5-103.4 13.1-56.5-5.1-93.8-22.6-115.9-20.7-26.1-52.6-45-91.1-52H231.8l-4.4 35.5c-6.7 47-12.9 93.9-19.4 141.5l-7.9 59.8 60.3-4.4c29.4-2.1 59-4.2 88.5-6.2-15.7 101.7-31.1 204.9-46 307.6l-9.3 64.4c70.5-18.5 141.7-35.3 213.5-50.5l4.1-25.4c16.6-103.1 33.8-206.9 51.2-309.1 24.7-1.4 49.5-2.6 74.2-3.9-16.7 87.3-33.2 174.6-49 261.1L576 652.1c71.5-14 143.5-26.4 216.1-37.2l5.3-27.4c6-30.7 12.1-61.7 18.2-92.5 25.3-2.6 50.7-5 76.1-7.3l2.8 113.2c145.6-18.3 293.3-29.8 442.8-34.4 1.2-.7 2.3-1.4 3.4-2.2 1.1.7 2.3 1.4 3.5 2 46.2-1.3 92.5-2 139-2 99.8 0 198.9 3.1 297.2 9.3l6.8-37.2c5.7-31.3 11.4-62.5 17-93.8 60.6 2.8 121.6 6.3 182 10.3-4.8 30.7-9.5 61-14.2 91l-7.1 45c122.1 12.5 242.9 29.6 362.1 51.3l12.5-13c26.2-27.2 52.5-55 78.6-83.2 18 38.3 34.8 75.1 50.7 111.3l6.2 14.2c85.8 18.5 170.7 39.3 254.7 62.4l-32.5-80.9c-35.2-87.6-72.5-174-110.8-258.1 49.7-59.7 100.9-124.4 159.3-202.8l54.3-71.8zM520.7 285.5c-20 115.9-39.3 231.9-57.9 348-37.2 8.3-74.4 17.1-111.4 26.4 17.7-122.6 36.1-245.1 55.3-367.5-50 3.2-99.9 6.6-149.8 10.2 6.5-47.5 13.1-94.9 19.8-142.3L694 160c-7.7 39.2-15.2 78.4-22.7 117.6-50.2 2.4-100.4 5-150.6 7.9zM1057 450.9c1.5 35.7 2.3 53.6 3.8 89.2-39.5 3.5-79.1 7.6-118.5 12.2-.9-34.5-1.3-51.8-2.1-86.5-.4-21.8-10.1-30-35.2-27.8-43.5 3.8-86.9 8-130.3 12.7-8.5 42.7-17 85.3-25.3 128-37.9 6-75.8 12.5-113.6 19.5 26.8-146.3 54.7-292.4 83.4-438.3 87.8 0 175.6-.1 263.4-.1 72.2-1.7 145.2 31.9 125.8 115.7-10.4 44.9-40.8 83.4-83.5 102.7 21.1 13.6 30.5 36.9 32.1 72.7zm536.6 72.7c-59.5-1.1-118.9-1.4-178.4-.9-19.3.3-29 .5-48.3.9-.7 0-1.3-1.3-1.3-2-.6-15.7.5-33.9 1.3-49.7.5-9.9 1.3-21.2 2.5-33.4-13.9.3-20.9.4-34.8.8-9.5 34.4-17.2 63.2-21.1 83.9-.1.6-.7 2.2-1.3 2.3-74.9 3.1-149.5 7.6-224.3 13.5-1.1.1-1.6-1.9-1-2.8 81.8-126.7 166.3-251.3 251-376 .2-.4.7-.8 1.1-.8h154.8c.6 0 1.1.9 1.3 1.4 32.5 120.6 65.8 240.6 99.8 360.7.2.8-.4 2.1-1.3 2.1zM2232 244.1c21.3 37 42.4 74.5 63.1 112.5-30.8 33.8-62.3 67.2-94.1 100.2 10.2-69 20.5-139.5 31-212.7zm-231 161.2c-79.1-5.3-158.1-9.6-237.3-13-8.1 45.3-16.3 90.6-24.6 135.8-39.3-2.2-78.7-3.9-118.1-5 23.5-121 46.3-242.2 68.3-363.5 121.7 0 243.5.1 365.2.1-6.5 43.2-9.7 64.6-16.2 107.3-83.8-2.7-167.6-4.9-251.4-6.5-2.6 14.8-3.9 22.2-6.4 37 78.8 2.1 157.5 4.8 236.2 8-6.4 40.3-9.5 60.2-15.7 99.8zm19.5 146.7c20.6-130.6 40.6-261.4 60.1-392.2 38.3 0 76.5 0 114.8.1-19.4 135.7-39.2 271.3-59.5 406.9-38.5-5.5-76.9-10.4-115.4-14.8zm508.4-166.8c43.4 93.9 84.2 188.6 122.8 284.6-46-11.7-91.9-22.9-138.1-33.7-26.4-60-54.1-119.5-82.8-178.5-41.4 46.2-83.5 91.5-126.6 136-47.4-8.5-94.9-16.2-142.5-23.2 66.4-65.6 130.5-132.9 192.8-202.4-37.6-70.3-76.8-139.7-117.6-208.2 46.9 0 93.9.1 140.8.1 25.7 46.2 50.7 92.9 74.9 139.9 38.4-46 76-92.6 112.9-139.8 46.9 0 93.9.1 140.8.1-57 76.8-115.5 152.2-177.4 225.1z" />
@@ -19,41 +19,41 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex items-center justify-between w-full">
-          <div className="flex items-center justify-around gab-4">
-            <a className="mx-3 text-white font-medium" href="/">
+          <div className="flex md:flex-row flex-col items-start justify-between md:items-center md:justify-around">
+            <a className="mx-3 py-2 text-white font-medium" href="/">
               {" "}
               Services{" "}
             </a>
-            <a className="mx-3 text-white font-medium" href="/">
+            <a className="mx-3 py-2 text-white font-medium" href="/">
               {" "}
               À propos{" "}
             </a>
-            <a className="mx-3 text-white font-medium" href="/">
+            <a className="mx-3 py-2 text-white font-medium" href="/">
               {" "}
               Carrières{" "}
             </a>
-            <a className="mx-3 text-white font-medium" href="/">
+            <a className="mx-3 py-2 text-white font-medium" href="/">
               {" "}
               Contact{" "}
             </a>
           </div>
-          <div className="flex flex-col pb-8">
-            <p className="text-white pb-2"> Restez a l'affût </p>
-            <div className="flex items-center justify-between">
+          <div className="flex flex-col md:items-center items-end md:justify-around justify-between md:pb-0 pb-8">
+            <p className="text-white pb-2 self-start"> Newsletter </p>
+            <div className="flex flex-col items-end md:items-center justify-between">
               <input
                 type="text"
-                className="border-2 border-gun-400 bg-white rounded-lg border-none py-3 px-2 outline-none"
+                className="border-2 border-gun-400 w-[180px] md:w-[300px] bg-white rounded-lg border-none py-2.5 px-2 outline-none"
                 placeholder="Addresse courriel"
               />
-              <button className="mx-2 py-3 px-4 text-white rounded-lg bg-gun-200 font-medium">
+              <button className="md:mx-2 py-2.5 px-4 mt-3 self-start text-white rounded-lg bg-gun-200 font-medium">
                 {" "}
-                Envoyer{" "}
+                S'inscrire{" "}
               </button>
             </div>
           </div>
         </div>
-        <div className="border-t-2 border-white flex mt-12 items-center justify-between w-full">
-          <div className="py-8">
+        <div className="border-t-2 border-white flex flex-col md:flex-row mt-12 items-start md:items-center justify-between w-full">
+          <div className="py-8 flex md:flex-row flex-col justify-betweem items-start gap-4">
             <a className="mx-2 text-white text-sm" href="/">
               {" "}
               Politique de confidentialité{" "}

@@ -13,22 +13,24 @@ export default function Home() {
       data-item="main"
       className="w-full h-auto flex-col items-start bg-white"
     >
-      <section className="w-full flex flex-col justify-between items-center md:flex-row bg-gun h-auto">
-        <div className="w-full md:w-1/2 h-[100%] bg-white"></div>
-        <div className="w-full md:w-1/2 h-auto py-16">
+      <section className="w-full flex flex-col justify-between items-center md:flex-row h-auto bg-gun pt-8 md:pb-0">
+        <div className="w-full md:w-1/2 h-auto">
           <div
             data-item="headlineParent"
-            className="w-full h-auto flex items-center justify-center"
+            className="w-full h-auto flex items-center justify-center mt-8 md:mt-0"
           >
             <h2
               data-text="headline"
-              className="font-medium text-2xl mt-2 mb-4 text-white"
+              className="font-medium text-xl mb-2 text-white"
             >
               {" "}
-              Soumission express{" "}
+              Obtenir un dévis rapide.{" "}
             </h2>
           </div>
-          <form className="md:w-1/2 w-3/4 mx-auto flex-col items-center justify-center rounded-xl bg-gun-600 shadow-lg py-6 px-8">
+          <form
+            className="md:w-1/2 w-3/4 mx-auto flex-col items-center justify-center rounded-xl bg-gun-600 shadow-lg py-3 px-4 mb-16
+           md:pb-0"
+          >
             <div className="flex flex-col items-start px-6">
               <label className="mb-2 font-medium text-white">Nom</label>
               <input
@@ -65,6 +67,12 @@ export default function Home() {
               </button>
             </div>
           </form>
+        </div>
+        <div className="w-full md:w-1/2 h-full overflow:hidden">
+          <div className="absolute left-0 top-0 w-1/2 opacity:0.5 bg-gun -z-3"></div>
+          <video autoPlay muted loop className="w-full h-auto">
+            <source src="/img/road.mp4" />
+          </video>
         </div>
       </section>
 
@@ -171,10 +179,77 @@ export default function Home() {
           className="pt-8 items-center justify-center"
         >
           {" "}
-          <h2 data-text="headline" className="text-2xl text-center text-gun">
+          <h2
+            data-text="headline"
+            className="text-2xl text-center text-gun pb-8"
+          >
             {" "}
             Qui sommes nous ?{" "}
           </h2>{" "}
+        </div>
+        <div className="w-full flex md:flex-row flex-col h-auto items-center justify-between">
+          <div className="md:w-1/2 w-full flex items-center justify-center md:py-16">
+            <Image
+              src="/img/eye.png"
+              alt="notre vision"
+              width="300"
+              height="400"
+            />
+          </div>
+          <div className="md:w-1/2 w-full flex flex-col py-16">
+            <h1 className="text-5xl text-gun-400 pt-4 pb-8"> Notre vision </h1>
+            <p className="text-gun-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div className="w-full flex md:flex-row-reverse flex-col h-auto items-center justify-between md:py-16">
+          <div className="md:w-1/2 w-full flex items-center justify-center">
+            <Image
+              src="/img/value.png"
+              alt="nos valeurs"
+              width="300"
+              height="400"
+            />
+          </div>
+          <div className="md:w-1/2 w-full flex flex-col">
+            <h1 className="text-5xl text-gun-400 pt-4 pb-8"> Nos valeurs </h1>
+            <p className="text-gun-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div className="w-full flex md:flex-row flex-col h-auto items-center justify-between py-16">
+          <div className="md:w-1/2 w-full flex items-center justify-center">
+            <Image src="/img/hand.png" alt="wheel" width="300" height="400" />
+          </div>
+          <div className="md:w-1/2 w-full flex flex-col">
+            <h1 className="text-5xl text-gun-400 pt-4 pb-8">
+              {" "}
+              Notre promesse{" "}
+            </h1>
+            <p className="text-gun-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
       </section>
       <section className="w-full flex flex-col px-[24px] md:px-[64px] py-16 bg-titan-100">
@@ -183,7 +258,10 @@ export default function Home() {
           className="pt-8 items-center justify-center"
         >
           {" "}
-          <h2 data-text="headline" className="text-2xl text-center text-gun">
+          <h2
+            data-text="headline"
+            className="text-2xl text-center text-gun pb-8"
+          >
             {" "}
             Témoignages{" "}
           </h2>{" "}
@@ -249,7 +327,7 @@ export default function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <a
-              className="py-3.5 px-4 md:justify-center md:mx-0 mx-auto md:w-1/4 bg-flamingo flex md:items-center text-white rounded-md"
+              className="py-3.5 px-4 md:justify-center md:mx-0 mx-auto md:w-1/4 bg-gun flex md:items-center text-white rounded-md"
               href="/"
             >
               {" "}
@@ -261,29 +339,92 @@ export default function Home() {
       <section className="w-full flex flex-col px-[24px] md:px-[64px] py-16 bg-flamingo">
         <div
           data-item="headlineParent"
-          className="pt-8 items-center justify-center"
+          className="pt-8 flex flex-col items-center justify-center text-white py-12"
         >
           {" "}
-          <h2 data-text="headline" className="text-2xl text-center text-gun">
+          <h2
+            data-text="headline"
+            className="text-2xl text-center pb-3 text-white"
+          >
             {" "}
             FAQS{" "}
           </h2>{" "}
+          <p>
+            Vous avez des questions sur nos services de signaleurs routiers ou
+            de location d'équipement ? Vous trouverez ci-dessous les questions
+            les plus fréquentes.
+          </p>
+        </div>
+        <div className="w-full h-auto flex flex-col items-around justify-center gap-4">
+          <div className="p-8 border border-2-gun rounded-md text-white flex flex-row justify-between items-center">
+            En quoi conciste le travail d'un signaleur routier ?{" "}
+            <span className="text-2xl mx-3"> + </span>
+          </div>
+          <div className="p-8 border border-2-gun rounded-md text-white flex flex-row justify-between items-center">
+            {" "}
+            Ou peut on louer vos équipements ?{" "}
+            <span className="text-2xl mx-3"> + </span>{" "}
+          </div>
+          <div className="p-8 border border-2-gun rounded-md text-white flex flex-row justify-between items-center">
+            {" "}
+            Ou ce situe vos bureaux ? <span className="text-2xl mx-3"> + </span>
+          </div>
+          <div className="p-8 border border-2-gun rounded-md text-white flex flex-row justify-between items-center">
+            {" "}
+            Quelle est le délais moyen suite a une demande de signaleur routier
+            ? <span className="text-2xl mx-3"> + </span>
+          </div>
+          <div className="p-8 border border-2-gun rounded-md text-white flex flex-row justify-between items-center">
+            {" "}
+            Comment nous joindres ? <span className="text-2xl mx-3"> + </span>
+          </div>
         </div>
       </section>
       <section className="flex flex-col w-full py-16 px-[24px] md:px-[64px]">
         <div className="w-full flex items-center justify-center">
-          <h2 className="text-2xl text-center"> Nous joindres </h2>
+          <h2 className="w-full text-2xl text-center pb-12"> Nous joindres </h2>
         </div>
-        <div className="flex flex-col md:flex-row md:w-1/2 w-full items-center justify-between">
-          <div className="w-full md:w-1/2 flex items-center justify-center">
-            <Image src="/img/wheel.png" alt="pneu" width="500" height="500" />
-          </div>
-          <form className="w-full px-8">
-            <div>
-              <label>Label</label>
-              <input type="text" placeholder="label" />
+        <div className="flex flex-col md:flex-row md:w-1/2 w-full items-center justify-center">
+          <div className="md:w-1/2 flex items-center justify-center"></div>
+          <form className="w-full h-auto px-2 py-16 flex flex-col gap-4">
+            <div className="w-full flex flex-col">
+              <label className="mb-2 text-gun-400">Nom</label>
+              <input
+                type="text"
+                placeholder="Nom complet"
+                className="py-3 px-4 bg-titan rounded-lg text-white outline-none placeholder:text-gun-100"
+              />
             </div>
-            <button type="submit"> Envoyer </button>
+            <div className="w-full flex flex-col">
+              <label className="mb-2 text-gun-400">Courriel</label>
+              <input
+                type="text"
+                placeholder="Adresse courriel"
+                className="py-3 px-4 bg-titan rounded-lg text-white outline-none placeholder:text-gun-100"
+              />
+            </div>
+            <div className="w-full flex flex-col">
+              <label className="mb-2 text-gun-400">Entreprise</label>
+              <input
+                type="text"
+                placeholder="L'entreprise"
+                className="py-3 px-4 bg-titan rounded-lg text-white outline-none placeholder:text-gun-100"
+              />
+            </div>
+            <div className="w-full flex flex-col">
+              <label className="mb-2 text-gun-400">Détails</label>
+              <textarea
+                placeholder="Détails"
+                className="pt-3 pb-9 bg-titan placeholder:text-gun-100 rounded-lg"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="py-3 px-4 bg-gun mt-2 text-white rounded-lg "
+            >
+              {" "}
+              Envoyer{" "}
+            </button>
           </form>
         </div>
       </section>
