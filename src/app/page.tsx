@@ -13,11 +13,11 @@ export default function Home() {
       data-item="main"
       className="w-full h-auto flex-col items-start bg-white"
     >
-      <section className="w-full flex flex-col justify-between items-center md:flex-row h-auto bg-gun pt-8 md:pb-0">
+      <section className="w-full flex flex-col-reverse justify-between items-center md:flex-row h-auto bg-gun md:pt-0 pb-8 md:pb-0">
         <div className="w-full md:w-1/2 h-auto">
           <div
             data-item="headlineParent"
-            className="w-full h-auto flex items-center justify-center mt-8 md:mt-0"
+            className="w-full h-auto flex items-center justify-center mt-3 md:mt-0  p-0"
           >
             <h2
               data-text="headline"
@@ -28,8 +28,8 @@ export default function Home() {
             </h2>
           </div>
           <form
-            className="md:w-1/2 w-3/4 mx-auto flex-col items-center justify-center rounded-xl bg-gun-600 shadow-lg py-3 px-4 mb-16
-           md:pb-0"
+            className="md:w-1/2 w-3/4 mx-auto flex-col items-center justify-center rounded-xl bg-gun-600 shadow-lg  py-4 px-4
+            "
           >
             <div className="flex flex-col items-start px-6">
               <label className="mb-2 font-medium text-white">Nom</label>
@@ -307,7 +307,7 @@ export default function Home() {
         <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between overflow:hidden">
           <div className="flex md:items-center md:justify-start  w-full md:w-1/2">
             <Image
-              src="/img/flagger.jpg"
+              src="/img/flagger.JPG"
               alt="offres emplois signaleurs routiers"
               width="400"
               height="400"
@@ -415,7 +415,7 @@ export default function Home() {
               <label className="mb-2 text-gun-400">Détails</label>
               <textarea
                 placeholder="Détails"
-                className="pt-3 pb-9 bg-titan placeholder:text-gun-100 rounded-lg"
+                className="pl-3 pt-3 pb-9 bg-titan placeholder:text-gun-100 rounded-lg"
               ></textarea>
             </div>
             <button
