@@ -11,8 +11,8 @@ export function ScrollProvider({ children }: { children: any }) {
 
     // SET VALUES FOR FIRST ANIM
 
-    const headlines = gsap.utils.toArray("[data-text='headline']");
-    const body = gsap.utils.toArray("[data-text='body']");
+    const headlines = gsap.utils.toArray<HTMLElement>("[data-text='headline']");
+    const body = gsap.utils.toArray<HTMLElement>("[data-text='body']");
 
     // headline Animation
     headlines.forEach((headline) => {
