@@ -2,7 +2,7 @@
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { ScrollProvider } from "./helpers/ScrollProvider";
+// import { ScrollProvider } from "./helpers/ScrollProvider";
 import "./globals.css";
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        <ScrollProvider>{children}</ScrollProvider>
+        {children}
         <Footer />
       </body>
     </html>
